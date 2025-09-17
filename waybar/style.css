@@ -1,37 +1,33 @@
-@import "mocha.css";
+@import "../colors/color.css";
 
-/* Global */
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
     font-weight: bold;
-    font-size: 16px;
+    background-color: transparent;
+    border-radius: 5px;
     min-height: 0;
 }
 
-/* Waybar */
-window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+window,
+tooltip {
+    background-color: @background;
+    color: @foreground;
 }
 
-tooltip {
-    background: #1e1e2e;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #11111b;
+#waybar {
+    background: alpha(@background, 0.6);
+    border-radius: 0;
 }
 
 /* Workspaces */
 /* Workspaces pill container */
 #workspaces {
-    background: #1e1e2e;
+    background: transparent;
     border-radius: 10px;
     margin-left: 10px;
     padding: 3px 6px;                 /* internal padding */
-    border: 1px solid #181825;
+    /* border: 1px solid @select; */
     opacity: 0.8;
 }
 
@@ -43,22 +39,7 @@ tooltip {
     min-height: 18px;
     margin: 0 3px;                   /* spacing between buttons */
     border-radius: 6px;              /* slight rounding, not full */
-    background: #1e1e2e;             /* inactive workspace */
-}
-
-/* Active workspace */
-#workspaces button.active {
-    background: #cba6f7;             /* Catppuccin Mauve */
-}
-
-/* Focused workspace */
-#workspaces button.focused {
-    background: #89b4fa;             /* Catppuccin Blue */
-}
-
-/* Urgent workspace */
-#workspaces button.urgent {
-    background: #f38ba8;             /* Catppuccin Red */
+    background: @background;             /* inactive workspace */
 }
 
 /* Hover workspace */
@@ -66,134 +47,79 @@ tooltip {
     background: #a6adc8;             /* lighter hover */
 }
 
+/* Active workspace */
+#workspaces button.active {
+    background: @purple;             /* Catppuccin Mauve */
+}
 
-/* Shared module styling */
-#window,
-#clock,
+/* Focused workspace */
+#workspaces button.focused {
+    background: @blue;             /* Catppuccin Blue */
+}
+
+/* Urgent workspace */
+#workspaces button.urgent {
+    background: #f38ba8;             /* Catppuccin Red */
+}
+
+#custom-power,
+#tray,
+#bluetooth,
+#network,
 #battery,
 #pulseaudio,
-#network,
-#bluetooth,
+#clock,
 #temperature,
-#workspaces,
-#tray,
-#backlight,
-#custom-power {
-    background: #1e1e2e;
-    opacity: 0.8;
-    padding: 0px 10px;
-    margin-top: 8px;
-    border: 1px solid #181825;
-}
-
-/* Tray */
-#tray {
-    border-radius: 10px;
-    margin-right: 10px;
-}
-
-/* Power Profile */
-#custom-power_profile {
-    color: #a6e3a1;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-/* Window */
-#window {
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-
-/* Clock */
-#clock {
-    color: #ffffff;
-    border-radius: 10px;
-    margin-left: 10px;
-    padding: 4px 8px;
-}
-
-/* ===================== */
-/* === GROUPED MODULES === */
-/* ===================== */
-
-/* Network + Custom Power + Bluetooth (one pill) */
-#network {
-    color: #f9e2af;
-    border-radius: 10px 0px 0px 10px; /* left-rounded */
-    border-right: 0px;
-}
-
-#custom-power {
-    color: #a6e3a1;
-    border-left: 0px;
-    border-right: 0px; /* middle, flat edges */
-    border-radius: 0;
-}
-
-#bluetooth {
-    color: #89b4fa;
-    border-radius: 0px 10px 10px 0px; /* right-rounded */
-    margin-right: 10px;
-}
-
-/* Temperature + Battery (one pill) */
-#temperature {
-    border-radius: 10px 0px 0px 10px; /* left-rounded */
-    border-right: 0px;
-}
-
-#temperature.critical {
-    color: #eba0ac;
-}
-
-#battery {
-    color: #a6e3a1;
-    border-radius: 0px 10px 10px 0px; /* right-rounded */
-    margin-right: 10px;
-    border-left: 0px;
-}
-
-/* ===================== */
-/* === OTHER MODULES === */
-/* ===================== */
-
-/* Backlight */
 #backlight {
-    border-radius: 10px 0px 0px 10px;
+    color: @foreground;
+    margin: 1px 0;
+    padding: 0 10px;
 }
 
-/* Pulseaudio */
-#pulseaudio {
-    color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
+#custom-power:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#pulseaudio:hover,
+#clock:hover,
+#temperature:hover,
+#backlight:hover {
+    background-color: alpha(@select, 0.6);
 }
 
-#pulseaudio.muted {
-    color: @red;
+/* Individual colors */
+#bluetooth {
+    color: @yellow;
 }
 
-#pulseaudio.microphone {
-    color: #cba6f7;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-}
-
-/* Battery states */
-#battery.charging,
-#battery.plugged {
+#network {
     color: @green;
 }
 
-#battery.critical:not(.charging) {
+#battery {
+    color: @purple;
+}
+
+#pulseaudio {
+    color: @orange;
+}
+
+#clock {
+    margin-right: 10px;
+    color: @blue;
+}
+
+#temperature {
+    color:  @green;/* Heat usually red */
+}
+#temperature.critical {
     color: @red;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+}
+
+#backlight {
+    color: @pink; /* Soft accent for brightness */
+}
+
+#custom-power {
+    padding: 0px 10px 0 15px;
 }

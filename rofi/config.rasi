@@ -1,79 +1,87 @@
 configuration {
-    display-drun: "Applications:";
-    display-window: "Windows:";
-    drun-display-format: "{name}";
-    font: "JetBrainsMono Nerd Font Medium 10";
-    modi: "window,run,drun";
+    scroll-method: 1;
+    scrollbar: true;
     show-icons: true;
+    display-run: "Run ";
+    display-drun: "Open ";
+    display-window: "Windows:";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font Medium 10";
+    modi: "run,drun,window";
 }
 
-@theme "/dev/null"
+@import "~/.config/colors/style.rasi"
 
 * {
-  bg: #11121D;
-  bg-alt: #444b6a;
-
-  fg: #FFFFFF;
-  fg-alt: #787c99;
-
-  background-color: @bg;
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+    font: "JetbrainsMono Nerd Font 15";
 }
 
-window {
-  width: 30%;
+#window {
+    background-color: @background;
+    border:           3;
+    border-radius:    6;
+    border-color:     @bordercolor;
+    padding:          15;
+    width:            600px;
+}
+#listview {
+    lines:        6;
+    fixed-height: 0;
+    border:       0px;
+    spacing:      2px ;
+    padding:      2px 0px 0px ;
 }
 
-element {
-  padding: 8 0;
-  text-color: @fg-alt;
+#element {
+    border:        0;
+    border-radius: 8px;
+    padding:       3px;
+}
+#element.normal.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+#element.alternate.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+#element.selected.normal {
+    background-color: @selected-background;
+    text-color:       @foreground;
+}
+element-text, element-icon {
+    size:             45px;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
-element selected {
-  text-color: @fg;
+#scrollbar {
+    width:        2px ;
+    border:       0;
+    handle-width: 8px ;
+    padding:      0;
+    handle-color: @select;
 }
 
-element-text {
-  background-color: inherit;
-  text-color: inherit;
-  vertical-align: 0.5;
+#inputbar {
+    children:   [ prompt, textbox-prompt-colon, entry ];
+    spacing:       0;
+    padding:       15px;
+    border:        3px;
+    border-radius: 6px;
+    border-color:  @bordercolor;
 }
-
-element-icon {
-  size: 30;
+#prompt {
+    spacing:    0;
+    text-color: @foreground;
 }
-
-entry {
-  background-color: @bg-alt;
-  padding: 12;
-  text-color: @fg;
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ">";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @foreground;
 }
-
-inputbar {
-  children: [prompt, entry];
+#entry {
+    spacing:    0;
+    text-color: @foreground;
 }
-
-listview {
-  padding: 8 12;
-  background-color: @bg;
-  columns: 1;
-  lines: 8;
-}
-
-mainbox {
-  background-color: @bg;
-  children: [inputbar, listview];
-}
-
-prompt {
-  background-color: @bg-alt;
-  enabled: true;
-  padding: 12 0 0 12;
-  text-color: @fg;
-}
-
-/* vim: ft=sass

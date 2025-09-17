@@ -25,7 +25,8 @@
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
-    "tray"
+    "tray",
+    "custom/power"
     // "group/group-2",
   ],
   "group/group-1": {
@@ -49,7 +50,6 @@
     "orientation": "horizontal",
     "modules": [
       "network",
-      "custom/power",
       "bluetooth"
       // "custom/wallpaper"
     ]
