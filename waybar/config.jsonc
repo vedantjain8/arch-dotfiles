@@ -26,12 +26,13 @@
     "pulseaudio",
     "pulseaudio#microphone",
     "tray",
+    "custom/notification",
     "custom/power"
     // "group/group-2",
   ],
   "group/group-1": {
     "orientation": "horizontal",
-    "modules": ["hyprland/workspaces"]
+    "modules": ["hyprland/workspaces", "hyprland/window"]
   },
   // "group/group-2": {
   //   "orientation": "horizontal",
@@ -194,7 +195,10 @@
     "tooltip-format": "{essid} - {ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    // "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
+    "max-length": 40,
+    "on-click": "~/.config/scripts/rofi-wifi.sh",
+    "on-click-right": "kitty --class floating -e nmtui"
   },
 
   // "network": {

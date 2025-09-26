@@ -1,0 +1,9 @@
+{
+  "cpuTemp": {
+    "type": "cpuTemp",
+    "label": "CPU",
+    "sensor": "/sys/class/hwmon/hwmon7/temp1_input",
+    "format": "{value}°C",
+    "updateInterval": 2000
+  }
+}

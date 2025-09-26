@@ -5,7 +5,6 @@ crossnote
 dconf
 dolphinrc
 go
-gtk-3.0
 htop
 kdeconnect
 kde.org
@@ -22,3 +21,12 @@ rclone
 Google
 .android
 nextjs-nodejs
+libreoffice
+user-dirs.dirs
+user-dirs.locale
+gtk-2.0
+gtk-3.0
+gtk-4.0
+qt5ct
+qt6ct
+nwg-look

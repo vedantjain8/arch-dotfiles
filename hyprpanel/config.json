@@ -1,0 +1,116 @@
+{
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.font.name": "JetBrainsMono Nerd Font",
+  "theme.font.label": "JetBrainsMono Nerd Font",
+  "theme.font.size": "0.87rem",
+  "theme.font.weight": 600,
+  "menus.transitionTime": 200,
+  "theme.bar.floating": true,
+  "bar.autoHide": "never",
+  "menus.transition": "crossfade",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.border.location": "none",
+  "theme.bar.enableShadow": false,
+  "menus.media.hideAuthor": false,
+  "menus.media.hideAlbum": false,
+  "menus.media.displayTime": false,
+  "menus.media.displayTimeTooltip": false,
+  "notifications.ignore": [],
+  "theme.notification.enableShadow": false,
+  "theme.osd.enable": true,
+  "theme.osd.location": "bottom",
+  "theme.osd.orientation": "horizontal",
+  "menus.clock.weather.enabled": false,
+  "menus.dashboard.controls.enabled": true,
+  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.directories.enabled": false,
+  "theme.bar.menus.menu.dashboard.profile.size": "8.5em",
+  "theme.bar.buttons.modules.microphone.enableBorder": false,
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "bar.customModules.cpuTemp.sensor": "/sys/class/hwmon/hwmon7/temp1_input",
+  "menus.power.lowBatteryNotification": true,
+  "menus.power.lowBatteryThreshold": 10,
+  "theme.bar.menus.monochrome": false,
+  "wallpaper.enable": false,
+  "wallpaper.image": "",
+  "theme.bar.menus.opacity": 100,
+  "theme.bar.menus.cards": "#1e1e2e",
+  "theme.bar.transparent": true,
+  "theme.bar.buttons.monochrome": false,
+  "theme.bar.buttons.workspaces.hover": "#dc8add",
+  "theme.bar.buttons.windowtitle.text": "#ffffff",
+  "theme.bar.buttons.windowtitle.icon": "#ffffff",
+  "theme.notification.actions.text": "#ffffff",
+  "bar.customModules.cpuTemp.pollingInterval": 3000,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "clock"
+      ],
+      "right": [
+        "cputemp",
+        "microphone",
+        "hypridle",
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "systray",
+        "notifications",
+        "power"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.shadowMargins": "0px 0px 0px 0px",
+  "theme.bar.outer_spacing": "0.5em",
+  "bar.launcher.autoDetectIcon": false,
+  "bar.launcher.rightClick": "hyprpanel toggleWindow settings-dialog\n",
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": true,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "theme.bar.buttons.windowtitle.enableBorder": false,
+  "bar.windowtitle.custom_title": true,
+  "theme.bar.dropdownGap": "3em",
+  "theme.bar.buttons.padding_y": "0rem",
+  "theme.bar.buttons.y_margins": "0em",
+  "menus.power.confirmation": false
+}
