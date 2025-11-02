@@ -1,3 +1,4 @@
+- auto-cpufreq === automatic CPU frequency scaling
 - blueman === bluetooth manager
 - celluloid === video player
 - cliphist === clipboard manager
@@ -13,11 +14,13 @@
 - mousepad === text editor
 - nemo === file manager
 - networkmanager === network manager
+- ~~iwd === network manager backend~~
 - nm-applet === network manager applet
 - noto-fonts-emoji === emoji font
 - nwg-look === GTK themes
 - pavucontrol === audio control
 - pipewire === audio manager
+- powertop === power consumption monitor
 - rclone === cloud storage manager
 - rofi === application launcher
 - slurp === screen selection tool
@@ -28,6 +31,10 @@
 - wl-clipboard === clipboard manager
 - wlogout === logout screen
 - wofi === application launcher
+- zram-generator === compressed RAM swap
+
+# Some dev tools
+`tunnelmole` for tunneling
 
 # how to connect to bluetooth devices
 ```bash

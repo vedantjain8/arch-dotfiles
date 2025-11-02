@@ -1,6 +1,6 @@
 {
   "bar.customModules.storage.paths": [
-    "/"
+    "/home"
   ],
   "theme.font.name": "JetBrainsMono Nerd Font",
   "theme.font.label": "JetBrainsMono Nerd Font",
@@ -29,7 +29,7 @@
   "theme.bar.menus.menu.dashboard.profile.size": "8.5em",
   "theme.bar.buttons.modules.microphone.enableBorder": false,
   "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
-  "bar.customModules.cpuTemp.sensor": "/sys/class/hwmon/hwmon7/temp1_input",
+  "bar.customModules.cpuTemp.sensor": "/sys/class/hwmon/hwmon2/temp1_input",
   "menus.power.lowBatteryNotification": true,
   "menus.power.lowBatteryThreshold": 10,
   "theme.bar.menus.monochrome": false,
@@ -43,7 +43,7 @@
   "theme.bar.buttons.windowtitle.text": "#ffffff",
   "theme.bar.buttons.windowtitle.icon": "#ffffff",
   "theme.notification.actions.text": "#ffffff",
-  "bar.customModules.cpuTemp.pollingInterval": 3000,
+  "bar.customModules.cpuTemp.pollingInterval": 1000,
   "bar.layouts": {
     "0": {
       "left": [
@@ -59,7 +59,6 @@
         "microphone",
         "hypridle",
         "volume",
-        "network",
         "bluetooth",
         "battery",
         "systray",
@@ -77,6 +76,7 @@
         "media"
       ],
       "right": [
+        "battery",
         "volume",
         "clock",
         "notifications"
@@ -112,5 +112,7 @@
   "theme.bar.dropdownGap": "3em",
   "theme.bar.buttons.padding_y": "0rem",
   "theme.bar.buttons.y_margins": "0em",
-  "menus.power.confirmation": false
+  "menus.power.confirmation": false,
+  "notifications.autoDismiss": true,
+  "hyprpanel.restartAgs": false
 }
