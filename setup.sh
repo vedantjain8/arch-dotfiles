@@ -45,3 +45,11 @@ sleep 4
 # enable thermald service
 echo -e "\nEnabling thermald service...\n"
 sudo systemctl enable --now thermald.service
+
+# setup android studio to show in rofi
+read -p "Do you want to setup Android Studio to show in Rofi? (Y/N): " ANDSTUDIO
+if [[ $ANDSTUDIO == "Y" || $ANDSTUDIO == "yes" || $ANDSTUDIO == "YES" || $ANDSTUDIO == "y" ]]; then    
+    echo -e "\nSetting up Android Studio to show in Rofi...\n"
+    STUDIO_PATH="/home/$USER/Setup/android-studio/bin"
+    echo -e "[Desktop Entry]\nType=Application\nName=Android Studio\nComment=IDE for writing Android Applications\nExec=/bin/bash -c \"cd $STUDIO_PATH && ./studio.sh\"\nIcon=$STUDIO_PATH/studio.png\nTerminal=false\nCategories=Development;IDE;\nStartupWMClass=jetbrains-android-studio" > ~/.local/share/applications/android-studio.desktop
+fi

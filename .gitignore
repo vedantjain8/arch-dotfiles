@@ -1,3 +1,4 @@
+Android Open Source Project
 baloofileinformationrc
 BraveSoftware
 Code
@@ -5,7 +6,6 @@ crossnote
 dconf
 dolphinrc
 go
-htop
 kdeconnect
 kde.org
 kwalletrc
@@ -16,7 +16,6 @@ session
 yay
 Mousepad
 nemo
-btop
 rclone
 Google
 .android
@@ -24,11 +23,10 @@ nextjs-nodejs
 libreoffice
 user-dirs.dirs
 user-dirs.locale
-gtk-2.0
-gtk-3.0
-gtk-4.0
-qt5ct
-qt6ct
 nwg-look
 mozilla/firefox/Crash Reports/crash_helper_server.log
 vlc
+obsidian
+celluloid
+guvcview2
+gtk-4.0/assets

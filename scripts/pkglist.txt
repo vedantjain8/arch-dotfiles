@@ -12,6 +12,9 @@ btop
 btrfs-progs
 clipvault
 cowsay
+docker
+docker-buildx
+docker-compose
 dxvk-bin
 efibootmgr
 fastfetch
@@ -22,6 +25,7 @@ gnome-keyring
 grim
 grub
 gst-plugin-pipewire
+guvcview
 gvfs
 gvfs-smb
 htop
@@ -46,6 +50,7 @@ lib32-ncurses
 lib32-vkd3d
 lib32-zlib
 libpulse
+libqalculate
 libreoffice-fresh
 libva-intel-driver
 linux
@@ -66,10 +71,12 @@ noto-fonts
 noto-fonts-emoji
 npm
 nwg-look
+obsidian
 otf-font-awesome
 pamixer
 papirus-icon-theme
 pavucontrol
+perl-image-exiftool
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -78,6 +85,7 @@ polkit-kde-agent
 postgresql
 powertop
 pyenv
+python-flask
 python-pip
 python-pylint
 python-virtualenv
@@ -88,6 +96,7 @@ qt6ct
 rclone
 reflector
 rofi
+rofi-calc
 rofi-emoji
 sddm
 semver
