@@ -53,3 +53,7 @@ if [[ $ANDSTUDIO == "Y" || $ANDSTUDIO == "yes" || $ANDSTUDIO == "YES" || $ANDSTU
     STUDIO_PATH="/home/$USER/Setup/android-studio/bin"
     echo -e "[Desktop Entry]\nType=Application\nName=Android Studio\nComment=IDE for writing Android Applications\nExec=/bin/bash -c \"cd $STUDIO_PATH && ./studio.sh\"\nIcon=$STUDIO_PATH/studio.png\nTerminal=false\nCategories=Development;IDE;\nStartupWMClass=jetbrains-android-studio" > ~/.local/share/applications/android-studio.desktop
 fi
+
+# clear clipboard history after boot
+echo -e "\nSetting up clipboard clear on boot...\n"
+(crontab -l 2>/dev/null; echo "@reboot /usr/bin/clipvalut clear") | crontab -
