@@ -6,7 +6,7 @@ configuration {
     display-drun: "Open ";
     display-window: "Windows:";
     drun-display-format: "{icon} {name}";
-    font: "JetBrainsMono Nerd Font Medium 10";
+    font: "JetBrainsMono Nerd Font Medium 10, Noto Color Emoji 12";
     modi: "run,drun,window,calc";
 }
 

@@ -1,7 +1,8 @@
 - auto-cpufreq === automatic CPU frequency scaling
 - blueman === bluetooth manager
-- celluloid === video player
-- cliphist === clipboard manager
+- ~~celluloid === video player~~
+- ~~cliphist === clipboard manager~~
+- clipvault === clipboard storage
 - ~~dunst === notification~~
 - ~~feh === image viewer~~
 - gnome-keyring  === keyring 
@@ -14,7 +15,7 @@
 - mousepad === text editor
 - nemo === file manager
 - networkmanager === network manager
-- ~~iwd === network manager backend~~
+- iwd === network manager backend
 - nm-applet === network manager applet
 - noto-fonts-emoji === emoji font
 - nwg-look === GTK themes
