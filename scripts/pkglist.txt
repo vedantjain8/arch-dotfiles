@@ -1,5 +1,7 @@
 7zip
 ags-hyprpanel-git
+ansible
+auto-cpufreq
 base
 base-devel
 bash-completion
@@ -12,6 +14,7 @@ btop
 btrfs-progs
 clipvault
 cowsay
+cronie
 docker
 docker-buildx
 docker-compose
@@ -20,6 +23,7 @@ efibootmgr
 fastfetch
 file-roller
 firefox
+flatpak
 git
 gnome-keyring
 grim
@@ -87,6 +91,7 @@ powertop
 pyenv
 python-flask
 python-pip
+python-pipx
 python-pylint
 python-virtualenv
 qt5-wayland
@@ -95,6 +100,7 @@ qt6-wayland
 qt6ct
 rclone
 reflector
+restic
 rofi
 rofi-calc
 rofi-emoji
@@ -126,6 +132,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 wlogout
+wtype
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-wlr
@@ -136,4 +143,6 @@ xorg-server
 xorg-xinit
 yad
 yay
+yay-debug
+zip
 zram-generator
