@@ -5,6 +5,7 @@ auto-cpufreq
 base
 base-devel
 bash-completion
+bat
 blueman
 bluez
 bluez-utils
@@ -24,6 +25,7 @@ fastfetch
 file-roller
 firefox
 flatpak
+ghostty
 git
 gnome-keyring
 grim
@@ -67,6 +69,7 @@ mousepad
 nano
 ncdu
 nemo
+nemo-fileroller
 network-manager-applet
 node-gyp
 nodejs
@@ -109,6 +112,7 @@ semver
 slurp
 smartmontools
 sof-firmware
+starship
 swappy
 swww
 tailscale
@@ -118,6 +122,7 @@ tree
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-liberation
+ttf-nerd-fonts-symbols-mono
 tumbler
 unrar
 uwsm
@@ -146,3 +151,6 @@ yay
 yay-debug
 zip
 zram-generator
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting

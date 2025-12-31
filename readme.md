@@ -1,4 +1,5 @@
 - auto-cpufreq === automatic CPU frequency scaling
+- bat === modern file reader
 - blueman === bluetooth manager
 - ~~celluloid === video player~~
 - ~~cliphist === clipboard manager~~
@@ -27,12 +28,14 @@
 - slurp === screen selection tool
 - ~~swaync === notification~~
 - swappy === screenshot annotation tool
+- startship === prompt
 - ttf-jetbrains-mono-nerd === font
 - ~~waybar === status bar~~
 - wl-clipboard === clipboard manager
 - wlogout === logout screen
 - wofi === application launcher
 - zram-generator === compressed RAM swap
+- zsh === shell
 
 # Some dev tools
 `tunnelmole` for tunneling

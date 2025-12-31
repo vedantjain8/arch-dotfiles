@@ -1,0 +1,27 @@
+add_newline = true
+
+format = """
+$directory$git_branch$git_status$fill$nodejs$python$rust$golang$java$kotlin
+$character
+"""
+
+[character]
+success_symbol = "❯"
+error_symbol = "❯"
+
+[directory]
+style = "bold cyan"
+format = '[$path ]($style)'
+truncation_length = 5
+truncation_symbol = '…/'
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold yellow"
+
+[fill]
+symbol = " "
